@@ -125,7 +125,7 @@ class Blockchain {
             if (currentTime-temps < (5*60)){
                 if(bitcoinMessage.verify(message, address, signature)) {
                     let block = new BlockClass.Block({"owner":address, "star":star});
-                    self._addBlock(block);
+                    await self._addBlock(block);
                     resolve(block);
                 }else{
                     reject(Error('Nessage is not verified'))
@@ -223,7 +223,7 @@ class Blockchain {
                 validatedBlocks.forEach((valid, index) => {
                     if (!valid) {
                         const invalidBlock = self.chain[index];
-                        const errorMessage = `Block ${index} hash (${invalidBlock.hash}) is invalid`;
+                        const errorMessage = await `Block ${index} hash (${invalidBlock.hash}) is invalid`;
                         errorLog.push(errorMessage);
                     }
                 });

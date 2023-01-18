@@ -72,7 +72,7 @@ class Block {
         return new Promise( async (resolve, reject) => {
             let enc_data = this.body; // Getting the encoded data saved in the Block
             let dec_data = hex2ascii(enc_data);        // Decoding the data to retrieve the JSON representation of the object
-            let dec_data_in_JSON=JSON.parse(dec_data);        // Parse the data to an object to be retrieve.
+            let decdata_in_JSON=JSON.parse(dec_data);        // Parse the data to an object to be retrieve.
             // Resolve with the data if the object isn't the Genesis block
             if (this.height == 0) {
                 //This is th genesis block as height == 0
