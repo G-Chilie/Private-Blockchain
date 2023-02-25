@@ -1,28 +1,12 @@
-# Private Blockchain Application
 
-You are starting your journey as a Blockchain Developer, this project allows you to demonstrate
-that you are familiarized with the fundamentals concepts of a Blockchain platform.
-Concepts like:
-    - Block
-    - Blockchain
-    - Wallet
-    - Blockchain Identity
-    - Proof of Existance
-
-Are some of the most important components in the Blockchain Framework that you will need to describe and also
-why not? Implement too.
-
-In this project you will have a boilerplate code with a REST Api already setup to expose some of the functionalities
-you will implement in your private blockchain.
-
-## What problem will you solve implementing this private Blockchain application?
+## The problem I solved implementing this private Blockchain application?
 
 Your employer is trying to make a test of concept on how a Blockchain application can be implemented in his company.
 He is an astronomy fans and he spend most of his free time on searching stars in the sky, that's why he would like
 to create a test application that will allows him to register stars, and also some others of his friends can register stars
 too but making sure the application know who owned each star.
 
-### What is the process describe by the employer to be implemented in the application?
+### The process describe by the employer to be implemented in the application?
 
 1. The application will create a Genesis Block when we run the application.
 2. The user will request the application to send a message to be signed using a Wallet and in this way verify the ownership over the wallet address. The message format will be: `<WALLET_ADRESS>:${new Date().getTime().toString().slice(0,-3)}:starRegistry`;
@@ -41,7 +25,7 @@ too but making sure the application know who owned each star.
 7. The application will allow us to retrieve the Star objects belong to an owner (wallet address). 
 
 
-## What tools or technologies you will use to create this application?
+## Tools or technologies you will use to create this application?
 
 - This application will be created using Node.js and Javascript programming language. The architecture will use ES6 classes
 because it will help us to organize the code and facilitate the maintnance of the code.
